@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".menuAdmin">
+
+    <Button
+        android:id="@+id/btnInsertarCama"
+        android:layout_width="128dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="#4CAF50"
+        android:text="INsertar cama"
+        app:layout_constraintStart_toEndOf="@+id/btnAgregarPaciente"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="44dp"
+        android:text="salir"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAgregarArea" />
+
+    <Button
+        android:id="@+id/btninsertarEnfermera"
+        android:layout_width="134dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="21dp"
+        android:backgroundTint="#1A2FA6"
+        android:text="Insertar enfermera"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAgregarPaciente" />
+
+    <Button
+        android:id="@+id/btninsertarHabitacion"
+        android:layout_width="138dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#C3B118"
+        android:text="insertar habitacion"
+        app:layout_constraintStart_toEndOf="@+id/btninsertarEnfermera"
+        app:layout_constraintTop_toBottomOf="@+id/btnInsertarCama" />
+
+    <Button
+        android:id="@+id/btninsertarServicio"
+        android:layout_width="130dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="#FF9800"
+        android:text="Insertar servicio"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btninsertarEnfermera" />
+
+    <Button
+        android:id="@+id/btnAgregarArea"
+        android:layout_width="139dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#2196F3"
+        android:text="insertar area"
+        app:layout_constraintStart_toEndOf="@+id/btninsertarServicio"
+        app:layout_constraintTop_toBottomOf="@+id/btninsertarHabitacion" />
+
+    <Button
+        android:id="@+id/btnAgregarPaciente"
+        android:layout_width="112dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="#E41515"
+        android:text="Insertar paciente"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
